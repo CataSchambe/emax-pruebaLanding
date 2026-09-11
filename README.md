@@ -1,7 +1,7 @@
 # ⚡ Memoria Técnica & Documentación de Entrega
 ## Prueba Técnica: Diseñadora Web / Frontend — Grupo EMAX
 
-> **Demo Pública Desplegada:**  *  
+> **Demo Pública Desplegada:** https://emax-catalina-prueba.vercel.app/  *  
 > **Repositorio de Trabajo:** Listo para control de versiones Git con commits atómicos semánticos.
 
 ---
