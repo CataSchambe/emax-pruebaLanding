@@ -1,0 +1,131 @@
+/* ==========================================================================
+   GRUPO EMAX - ASESORÍA ENERGÉTICA
+   Design System Tokens (Eye-Care Light Mode & Deep Dark Mode)
+   ========================================================================== */
+
+:root {
+  /* Common Brand Tokens */
+  --color-primary: #F48515;          /* Solar Orange */
+  --color-primary-hover: #DC7207;
+  --color-primary-soft: rgba(244, 133, 21, 0.12);
+  --color-primary-glow: rgba(244, 133, 21, 0.25);
+  
+  --color-tertiary: #6C955F;         /* Efficiency Green */
+  --color-tertiary-dark: #416837;
+  --color-tertiary-soft: rgba(108, 149, 95, 0.15);
+  
+  --color-accent: #E5BA38;           /* Warm Gold */
+  --color-accent-soft: rgba(229, 186, 56, 0.18);
+
+  /* Typography */
+  --font-family-base: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-full: 9999px;
+
+  /* Spacing Rhythm */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* Layout Constraints */
+  --container-max-width: 1280px;
+  --container-padding: 1.5rem;
+  --header-height: 80px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ========================================================================
+     EYE-CARE LIGHT MODE (Modo Claro de bajo brillo y fatiga visual reducida)
+     Evita el blanco 100% puro en grandes superficies. Utiliza un lienzo
+     suave tipo papel mate (#F2F6F5) y textos antracita cálido (#222B2B).
+     ======================================================================== */
+  --bg-canvas: #F2F6F5;             /* Fondo mate cálido anti-reflejo */
+  --bg-surface: #FAFCFB;            /* Tarjetas elevadas con blanco suave */
+  --bg-surface-low: #E7EFEF;        /* Contenedores interiores descansados */
+  --bg-surface-mid: #DCE5E4;        /* Separadores neutros */
+  --bg-header: rgba(242, 246, 245, 0.92);
+
+  --color-secondary: #1D686D;        /* Deep Petrol Teal */
+  --color-secondary-light: #41868B;
+  --color-secondary-soft: rgba(29, 104, 109, 0.10);
+  --color-secondary-glow: rgba(29, 104, 109, 0.20);
+
+  --color-dark: #222B2B;             /* Texto base suave al ojo, no negro puro */
+  --text-main: #222B2B;              /* Alias semántico oficial para el texto principal */
+  --color-slate-dark: #272D2D;       /* Pizarra oscura para footer y contrastes intensos */
+  --color-dark-deep: #131A1A;        /* Títulos de alto contraste */
+  --color-muted: #536464;            /* Párrafos secundarios legibles */
+  --color-muted-light: #5E7272;      /* Microcopy calibrado para contraste WCAG AA (4.54:1) */
+
+  --color-danger: #C2410C;           /* Error / alerta accesible (WCAG AA > 4.5:1) */
+  --color-danger-soft: rgba(194, 65, 12, 0.12);
+
+  --border-subtle: #DDE5E4;
+  --border-medium: #CAD5D4;
+  --border-focus: #1D686D;
+
+  --shadow-sm: 0 1px 3px rgba(25, 40, 40, 0.04), 0 1px 2px rgba(25, 40, 40, 0.03);
+  --shadow-md: 0 4px 16px -2px rgba(25, 40, 40, 0.06), 0 2px 4px rgba(25, 40, 40, 0.04);
+  --shadow-lg: 0 12px 28px -4px rgba(29, 104, 109, 0.10), 0 4px 8px -2px rgba(25, 40, 40, 0.04);
+  --shadow-glow-primary: 0 8px 24px -2px rgba(244, 133, 21, 0.35);
+
+  --input-bg: #FAFCFB;
+  --card-hero-border: #DDE5E4;
+}
+
+/* ==========================================================================
+   DEEP COSMIC DARK MODE (Modo Oscuro Elegante y Sofisticado)
+   Inspirado en la estética espacial y energética de Grupo EMAX
+   ========================================================================== */
+[data-theme="dark"] {
+  --bg-canvas: #0E1214;             /* Lienzo carbón profundo */
+  --bg-surface: #161D20;            /* Tarjetas elevadas oscuras */
+  --bg-surface-low: #1C2428;        /* Bloques alternativos */
+  --bg-surface-mid: #253035;        /* Bordes y divisores internos */
+  --bg-header: rgba(14, 18, 20, 0.92);
+
+  --color-secondary: #36ADB5;        /* Petrol Teal luminoso para modo oscuro */
+  --color-secondary-light: #52C1C8;
+  --color-secondary-soft: rgba(54, 173, 181, 0.15);
+  --color-secondary-glow: rgba(54, 173, 181, 0.28);
+
+  --color-dark: #DEE8E8;             /* Texto claro nítido y descansado */
+  --text-main: #DEE8E8;
+  --color-slate-dark: #0E1214;
+  --color-dark-deep: #FFFFFF;        /* Títulos principales */
+  --color-muted: #95A7A7;            /* Texto secundario de alta legibilidad */
+  --color-muted-light: #7E9494;
+
+  --color-danger: #F87171;           /* Error / alerta accesible para tema oscuro */
+  --color-danger-soft: rgba(248, 113, 113, 0.18);
+
+  --border-subtle: #242E33;
+  --border-medium: #313F45;
+  --border-focus: #36ADB5;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 18px -2px rgba(0, 0, 0, 0.50);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.65);
+  --shadow-glow-primary: 0 8px 24px -2px rgba(244, 133, 21, 0.45);
+
+  --input-bg: #141A1D;
+  --card-hero-border: #283439;
+}

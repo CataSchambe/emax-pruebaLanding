@@ -1,0 +1,5 @@
+# Grupo EMAX - Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://grupo-emax.es/sitemap.xml
